@@ -5,10 +5,9 @@ import ImageDetial from "../components/ImageDetail";
 const ImageScreen = () => {
     return (
         <View>
-            <ImageDetial />
-            <ImageDetial />
-            <ImageDetial />
-            <ImageDetial />
+            <ImageDetial title="Forest" />
+            <ImageDetial title="Beach" />
+            <ImageDetial title="Mountain" />
         </View>
     )
 };
