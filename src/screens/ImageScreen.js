@@ -10,4 +10,4 @@ const ImageScreen = () => {
 
 const styles = StyleSheet.create({});
 
-export default ListScreen;
+export default ImageScreen;
