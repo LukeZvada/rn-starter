@@ -1,10 +1,15 @@
 import React from "react";
 import { Text, StyleSheet, View, Button, TouchableOpacity } from "react-native";
-import ListScreen from "./ListScreen";
+import ImageDetial from "../components/ImageDetail";
 
 const ImageScreen = () => {
     return (
-        <Text>Hi, there</Text>
+        <View>
+            <ImageDetial />
+            <ImageDetial />
+            <ImageDetial />
+            <ImageDetial />
+        </View>
     )
 };
 
