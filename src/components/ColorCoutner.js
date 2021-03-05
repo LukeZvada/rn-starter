@@ -1,19 +1,18 @@
 import React from "react";
 import { Text, StyleSheet, View, Button, FlatList } from "react-native";
 import { useState } from "react";
-import ColorCounter from "../components/ColorCoutner";
 
 
-const SquareScreen = () => {
+const ColorCounter = ({ color }) => {
 const [red, setRed] = useState([])
 const [green, setGreen] = useState([])
 const [blue, setBlue] = useState([])
 
     return (
         <View>
-            <ColorCounter color="Red" />
-            <ColorCounter color="Blue" />
-            <ColorCounter color="Green" />
+            <Text>{color}</Text>
+            <Button title={`Increase ${color}`} />
+            <Button title={`Decrease ${color}`} />
         </View>
     )
 };
@@ -21,4 +20,4 @@ const [blue, setBlue] = useState([])
 
 const styles = StyleSheet.create({});
 
-export default SquareScreen;
+export default ColorCounter;
