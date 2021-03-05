@@ -1,9 +1,12 @@
 import React from "react";
-import { Text, StyleSheet, View, Button, TouchableOpacity } from "react-native";
+import { Text, StyleSheet, View, Image } from "react-native";
 
 const ImageDetial = (props) => {
     return (
-        <Text>{props.title}</Text>
+        <View>
+            <Image source={props.imageSource} />
+            <Text>{props.title}</Text>
+        </View>
     )
 };
 
