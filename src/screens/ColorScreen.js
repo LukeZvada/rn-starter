@@ -16,21 +16,21 @@ const [colors, setColors] = useState([])
             }} />
             <View style={{ height: 100, width: 100, backgroundColor: randomRgb() }} />
             <FlatList 
-            //In this key extractor the rgb string generated is unique. So we dont need to pass a property name
-            keyExtractor={(item) => item}
-            data={colors} 
-            renderItem={({item}) => {
-                return (
-                    <View style={{ height: 100, width: 100, backgroundColor: item }} />
-                )
-            }}
-        />
+                //In this key extractor the rgb string generated is unique. So we dont need to pass a property name
+                keyExtractor={(item) => item}
+                data={colors} 
+                renderItem={({item}) => {
+                    return (
+                        <View style={{ height: 100, width: 100, backgroundColor: item }} />
+                    )
+                }}
+            />
         </View>
     )
 };
 
 
-//this is creating random rgb color numbers and returning a string rgb(243, 12, 239)
+//this is creating random rgb  color numbers and returning a string rgb(243, 12, 239)
 const randomRgb = () => {
     const red = Math.floor(Math.random() * 256)
     const green = Math.floor(Math.random() * 256)
